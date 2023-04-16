@@ -51,7 +51,7 @@ async def bot_check(bot_username):
 
 
 async def status_checker():
-    message = f"💡 **🔗 Wᴇʟᴄᴏᴍᴇ Tᴏ Iɴꜰʟᴇx Bᴏᴛ'ꜱ Sᴛᴀᴛᴜꜱ Cʜᴀɴɴᴇʟ .** 💡\n\n🔗 Tʜɪꜱ Iꜱ Lɪᴠᴇ Sᴛᴀᴛᴜꜱ Oꜰ Aʟʟ Iɴꜰʟᴇx Bᴏᴛꜱ. Tʜɪꜱ Mᴇꜱꜱᴀɢᴇ Kᴇᴇᴘꜱ Oɴ Uᴘᴅᴀᴛɪɴɢ Iɴ Eᴠᴇʀʏ 60 Mɪɴꜱ Wɪᴛʜ Lɪᴠᴇ Sᴛᴀᴛᴜꜱ Oꜰ Aʟʟ Iɴꜰʟᴇx Bᴏᴛꜱ Wʜᴇᴛʜᴇʀ Tʜᴇʏ Aʀᴇ Oɴʟɪɴᴇ / Oꜰꜰʟɪɴᴇ .\n\n"
+    message = f"💡 **✨ ᴡᴇʟᴄᴏᴍᴇ ᴛᴏ ᴛʜᴇ ᴀɪᴏᴅᴇ ʙᴏᴛ ꜱᴛᴀᴛᴜꜱ ᴄʜᴀɴɴᴇʟ .** 💡\n\n🔗 ʜᴇʀᴇ ɪs ᴛʜᴇ ʟɪsᴛ ᴏғ ᴛʜᴇ ʙᴏᴛ's ᴡʜɪᴄʜ ᴡᴇ ᴏᴡɴ ᴀɴᴅ ᴛʜᴇɪʀ sᴛᴀᴛᴜs (ᴀʟɪᴠᴇ ᴏʀ ᴅᴇᴀᴅ), ᴛʜɪs ᴍᴇssᴀɢᴇ ᴡɪʟʟ ᴋᴇᴇᴘ ᴜᴘᴅᴀᴛɪɴɢ ᴏɴ ᴇᴠᴇʀʏ 5 ᴍɪɴᴜᴛᴇs .\n\n"
     for bot in BOT_LIST:
         message += await bot_check(bot)
     time = datetime.datetime.now(pytz.timezone(f"{TIME_ZONE}"))
