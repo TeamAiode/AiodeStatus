@@ -34,7 +34,7 @@ async def bot_check(bot_username):
         async for message in app.get_chat_history(bot_username, limit=1):
             second_message_id = message.id
         if first_message_id == second_message_id:
-            status = f"\n\n🤖 **Bot**: @{bot_username}\n🔴 Status : **Oꜰꜰʟɪɴᴇ** ❌"
+            status = f"\n\n╭⎋ @{bot_username}\n╰⊚ **🫧🕊️⃝: ᴅᴇᴀᴅ ✨"
             for bot_admin_id in BOT_ADMIN_IDS:
                 if bot_admin_id.isnumeric():
                     bot_admin_id = int(bot_admin_id)
@@ -43,7 +43,7 @@ async def bot_check(bot_username):
                 except Exception as e:
                     print(e)
         else:
-            status = f"\n\n🤖 **Bot**: @{bot_username}\n🟢 Status : **Oɴʟɪɴᴇ** ✅"
+            status = f"\n\n╭⎋  @{bot_username}\n╰⊚ **🫧🕊️⃝: ᴀʟɪᴠᴇ ✨"
         await app.read_chat_history(bot_username)
         return status
     except FloodWait as e:
